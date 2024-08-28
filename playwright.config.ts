@@ -23,7 +23,7 @@ export default defineConfig({
   reporter: [['html',{open:'never'}]],
   use: {
     browserName: 'chromium',
-    baseURL: 'https://www.fedex.com',
+    baseURL: 'http://www.fedex.com',
     trace: 'retain-on-failure',
     screenshot:'only-on-failure',
     viewport: { width: 1440, height: 1080 },
