@@ -23,7 +23,7 @@ export default defineConfig({
   reporter: [['html',{open:'never'}]],
   use: {
     browserName: 'chromium',
-    baseURL: 'http://www.fedex.com',
+    baseURL: 'https://www.ayvens.com/',
     trace: 'retain-on-failure',
     screenshot:'only-on-failure',
     viewport: { width: 1440, height: 1080 },
@@ -36,6 +36,10 @@ export default defineConfig({
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
+    },
+    {
+      name: 'ayvens',
+      use: { ...devices['Desktop Chrome'],baseURL:"" },
     },
 
     // {
