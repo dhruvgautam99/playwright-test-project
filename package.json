@@ -1,0 +1,20 @@
+{
+  "name": "playwright-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+        "pretty-quick": "pretty-quick"
+  },
+  "keywords": [],
+  "author": "DG",
+  "license": "ISC",
+  "devDependencies": {
+    "@axe-core/playwright": "^4.7.3",
+    "@playwright/test": "^1.46.0",
+    "@types/node": "^22.2.0"
+  },
+  "dependencies": {
+    "pretty-quick": "^4.0.0"
+  }
+}
