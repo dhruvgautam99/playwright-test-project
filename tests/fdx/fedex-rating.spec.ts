@@ -1,8 +1,8 @@
 import { test, expect } from '@playwright/test';
 
-import {HomePage} from '../../pom/pages/home-page';
-import {GeoModal} from '../../pom/commons/geo-modal';
-import {GdprConsentModal} from '../../pom/commons/gdpr-consent-modal'
+import {HomePage} from '../../pom/pages/fdx/home-page';
+import {GeoModal} from '../../pom/commons/fdx/geo-modal';
+import {GdprConsentModal} from '../../pom/commons/fdx/gdpr-consent-modal'
 
 // import AxeBuilder from '@axe-core/playwright';
 
