@@ -28,7 +28,7 @@ export class HomePage{
     }
 
     async goto(){
-        await this.page.goto('nl-nl');
+        await this.page.goto('en-nl/home.html');
     }
 
     async fillShippingAddresses(fromAddress: string, toAddress: string){

@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-        "pretty-quick": "pretty-quick"
+    "lease":"npx playywright test --project=lease",
+    "fdx":"npx playywright test --project=fdx",
+    "pretty-quick": "pretty-quick"
   },
   "keywords": [],
   "author": "DG",

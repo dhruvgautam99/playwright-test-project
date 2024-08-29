@@ -23,7 +23,6 @@ export default defineConfig({
   reporter: [['html',{open:'never'}]],
   use: {
     browserName: 'chromium',
-    baseURL: 'https://www.ayvens.com/',
     trace: 'retain-on-failure',
     screenshot:'only-on-failure',
     viewport: { width: 1440, height: 1080 },
@@ -34,12 +33,18 @@ export default defineConfig({
   /* Configure projects for major browsers */
   projects: [
     {
-      name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      name: 'fdx',
+      testMatch:/fdx\/.*spec\.ts$/,
+      use: { ...devices['Desktop Chrome'],
+        baseURL:"http://www.fedex.com"
+       },
     },
     {
-      name: 'ayvens',
-      use: { ...devices['Desktop Chrome'],baseURL:"" },
+      name: 'lease',
+      testMatch: /lease\/.*spec\.ts$/,
+      use: { ...devices['Desktop Chrome'],
+            baseURL:"https://www.ayvens.com/" },
+            
     },
 
     // {
